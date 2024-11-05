@@ -2,7 +2,8 @@ import math
 import string
 f = open("sinerom.mem","w") #opens a .mem file to write in
 for i in range(256): #loop generates 256 values
-    v = int(math.cos(2*3.1416*i/256)*127+127)
+    v = int(math.cos(2*3.1416*i/256)*127+127) #use cos so it doesn't start from 0, and still generate sin values
+    #f = increment/256
     if (i+1)%16 == 0: #every 16 values creates a new line
         s = "{hex:2X}\n"
     else:

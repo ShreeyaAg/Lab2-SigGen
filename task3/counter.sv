@@ -1,5 +1,5 @@
 module counter #(
-    parameter WIDTH = 9
+    parameter WIDTH = 9 //9 allows for 512 bits
 )(
     //interface signals 
     input logic              clk, //clock
